@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class='containerEdit'>
+    <h2>Inserer Profil :</h2>
+    {{ form_start(form) }}
+        <div class='widget'>
+        {{ form_widget(form) }}
+        <div> Upload Image </div>
+        </div>
+        <img class="addUser" src="/build/images/add-user.png">
+    {{ form_end(form) }}
+    </div>
+{% endblock %}
